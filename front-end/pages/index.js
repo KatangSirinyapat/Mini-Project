@@ -15,11 +15,17 @@ export default function Home({ token }) {
       <div>
           <Navbar /> 
       </div>    
-      <div className = 'flex flex-col justify-center items-center text-5xl md:w-auto md:h-auto font border-2 border-red-600'>
-        <h2>Online Community Blog</h2>
-        <h2>PSU PHUKET</h2>
+      <div className = 'flex flex-col fixed justify-center items-center h-screen w-screen'>
+        <div className = 'flex flex-col -mt-28 font-bold uppercase text-5xl text-center p-8'>
+          <a className = 'animate-pulse'>Online Community Blog</a>
+          <a className = 'animate-pulse mt-8'>PSU PHUKET</a>   
+        </div>
+          <div className = 'flex justify-around md:w-80 text-lg  mt-8'>
+            <button className = 'w-36 h-14 font-semibold border-blue-600 rounded-lg bg-babyblue'>Sign in</button>
+            <button className = 'w-36 h-14 font-semibold border-blue-600 rounded-lg bg-babyblue'>Register</button> 
+          </div>  
       </div>
-         
+     
      
     </Layout>
   )

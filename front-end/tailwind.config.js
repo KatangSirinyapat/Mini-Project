@@ -1,3 +1,4 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
@@ -18,13 +19,18 @@ module.exports = {
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
     },
+    fontFamily: {
+      'sans': [ 'Prompt', 'sans-serif']
+    },
     backgroundColor: theme => ({
       'lightblue': '#0369A1',
       'blue': '#0EA5E9',
       'babyblue' : '#99ccff',
       'whiteblue' : '#c2e9fb',
      }),
-    extend: {},
+    extend: {
+      
+    },
   },
   variants: {
     extend: {},

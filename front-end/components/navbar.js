@@ -1,12 +1,12 @@
 import Link from 'next/link'
 const Navbar = () => (
-    <nav className='flex items-center bg-lightblue p-4'>
+    <nav className='flex items-center bg-gradient-to-r from-green-500 to-blue-400 xp-4 shadow-xl'>
         <Link href='/'>
             <a className='flex flex-col items-center divide-y-2 divide-white ml-4'>
                 <span className='text-xl text-white font-bold uppercase tracking-wide pb-1 text-center'>
                     Online Community Blog
                 </span>
-                <span className='text-sm text-white font-bold uppercase tracking-wide text-center pt-1'>
+                <span className='text-sm text-white font-bold uppercase tracking-wide text-center pt-2'>
                     Prince of Songkla University Phuket Campus
                 </span>
             </a>
