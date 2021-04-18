@@ -1,6 +1,6 @@
 import Link from 'next/link'
 const Navbar = () => (
-    <nav className='flex items-center bg-gradient-to-r from-green-500 to-blue-400 xp-4 shadow-xl'>
+    <nav className='flex items-center bg-gradient-to-r from-green-500 to-blue-400 p-4 shadow-xl'>
         <Link href='/'>
             <a className='flex flex-col items-center divide-y-2 divide-white ml-4'>
                 <span className='text-xl text-white font-bold uppercase tracking-wide pb-1 text-center'>
@@ -34,7 +34,7 @@ const Navbar = () => (
                         HOME
                      </a>
                 </Link>
-                <Link href='/'>
+                <Link href='/menu'>
                     <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 mr-4 rounded text-white font-bold items-center justify-center hover:bg-blue hover:text-white'>
                         MENU
                     </a>
@@ -46,7 +46,7 @@ const Navbar = () => (
                 </Link>
                 <Link href='/'>
                     <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 mr-4 rounded text-white font-bold items-center justify-center hover:bg-blue hover:text-white'>
-                        LOGOUT
+                        LOG OUT
                     </a>
                 </Link>
             </div>

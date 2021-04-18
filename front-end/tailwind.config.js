@@ -27,6 +27,10 @@ module.exports = {
       'blue': '#0EA5E9',
       'babyblue' : '#99ccff',
       'whiteblue' : '#c2e9fb',
+      'sunglow' : '#f8de7e',
+      'palepink' : '#ffb7c5',
+      'purple' : '#b19cd9',
+      'red' : '#da8a67',
      }),
     extend: {
       

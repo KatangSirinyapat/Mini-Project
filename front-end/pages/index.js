@@ -1,8 +1,6 @@
 import Head from 'next/head' 
 import Layout from '../components/layout' 
 import Navbar from '../components/navbar'
-// import styles from '../styles/Home.module.css'
-
 
 export default function Home({ token }) {
  
@@ -20,9 +18,9 @@ export default function Home({ token }) {
           <a className = 'animate-pulse'>Online Community Blog</a>
           <a className = 'animate-pulse mt-8'>PSU PHUKET</a>   
         </div>
-          <div className = 'flex justify-around md:w-80 text-lg  mt-8'>
-            <button className = 'w-36 h-14 font-semibold border-blue-600 rounded-lg bg-babyblue'>Sign in</button>
-            <button className = 'w-36 h-14 font-semibold border-blue-600 rounded-lg bg-babyblue'>Register</button> 
+          <div className = 'flex justify-around md:w-96 text-lg mt-8'>
+            <button className = 'w-36 h-14 font-semibold border-blue-600 rounded-lg bg-babyblue hover:bg-whiteblue shadow-lg'>Sign in</button>
+            <button className = 'w-36 h-14 font-semibold border-blue-600 rounded-lg bg-babyblue hover:bg-whiteblue shadow-lg'>Register</button> 
           </div>  
       </div>
      
