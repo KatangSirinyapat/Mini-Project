@@ -31,6 +31,8 @@ module.exports = {
       'palepink' : '#ffb7c5',
       'purple' : '#b19cd9',
       'red' : '#da8a67',
+      'green' : '#229954',
+      'darkred' : '#C0392B',
      }),
     extend: {
       

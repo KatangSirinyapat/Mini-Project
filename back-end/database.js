@@ -9,31 +9,31 @@ let users = {
 
 let commentsFIS = {
     list: [
-        { id: 1, name: 'sirinyapat', comment: "GOOD", date: '18 april 2021' },
-        { id: 2, name: 'jaturon', comment: "VERY GOOD", date: '19 april 2021' },
+        { id: 1, name: 'sirinyapat', comment: "GOOD", date: 'Mon Apr 19 2021', time: '07:22:13 PM' },
+        { id: 2, name: 'jaturon', comment: "VERY GOOD", date: 'Tue Apr 20 2021', time: '07:22:13 PM' },
     ]
 }
 
 
 let commentsFHT = {
     list: [
-        { id: 1, name: 'sirinyapat', comment: "GOOD", date: '18 april 2021' },
-        { id: 2, name: 'jaturon', comment: "VERY GOOD", date: '19 april 2021' },
+        { id: 1, name: 'sirinyapat', comment: "GOOD", date: 'Mon Apr 19 2021', time: '07:22:13 PM' },
+        { id: 2, name: 'jaturon', comment: "VERY GOOD", date: 'Tue Apr 20 2021', time: '07:22:13 PM' },
     ]
 }
 
 
 let commentsFTE = {
     list: [
-        { id: 1, name: 'sirinyapat', comment: "GOOD", date: '18 april 2021' },
-        { id: 2, name: 'jaturon', comment: "VERY GOOD", date: '19 april 2021' },
+        { id: 1, name: 'sirinyapat', comment: "GOOD", date: 'Mon Apr 19 2021', time: '07:22:13 PM' },
+        { id: 2, name: 'jaturon', comment: "VERY GOOD", date: 'Tue Apr 20 2021', time: '07:22:13 PM' },
     ]
 }
 
 let commentsCOC = {
     list: [
-        { id: 1, name: 'sirinyapat', comment: "GOOD", date: '18 april 2021' },
-        { id: 2, name: 'jaturon', comment: "VERY GOOD", date: '19 april 2021' },
+        { id: 1, name: 'sirinyapat', comment: "GOOD", date: 'Mon Apr 19 2021', time: '07:22:13 PM' },
+        { id: 2, name: 'jaturon', comment: "VERY GOOD", date: 'Tue Apr 20 2021', time: '07:22:13 PM' },
     ]
 }
 

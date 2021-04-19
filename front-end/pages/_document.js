@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Navbar from '../components/navbar'
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -13,6 +14,7 @@ class MyDocument extends Document {
         <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200;300;700&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet" />
         </Head>
         <body>
+          <Navbar />
           <Main />
           <NextScript />
         </body>

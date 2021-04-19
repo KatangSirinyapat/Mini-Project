@@ -1,8 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../components/layout'
-import Navbar from '../components/navbar'
-
 
 export default function Menu({ token }) {
 
@@ -12,12 +10,9 @@ export default function Menu({ token }) {
         <title>Online Community Blog</title>
       </Head>
 
-      <div>
-        <Navbar />
-      </div>
       <div className='md:flex flex-row fixed justify-evenly items-center h-screen w-screen'>
       
-      <Link href='/'>
+      <Link href='/fis'>
           <a className='flex flex-col w-56 h-60 bg-sunglow shadow-lg rounded-lg transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110'>
             <div className='-m-10'>
               <img src="/pin.svg"/>
@@ -32,7 +27,7 @@ export default function Menu({ token }) {
         </Link>
      
        
-        <Link href='/'>
+        <Link href='/fht'>
           <a className='flex flex-col w-56 h-60 bg-palepink shadow-lg rounded-lg text-gray-900 transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110'>
             <div className='-m-10'>
               <img src="/aeroplane.svg"/>
@@ -46,7 +41,7 @@ export default function Menu({ token }) {
           </a>
         </Link>
 
-        <Link href='/'>
+        <Link href='/fte'>
           <a className='flex flex-col w-56 h-60 bg-purple shadow-lg rounded-lg transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110'>
             <div className='-m-10'>
               <img src="/hiring.svg"/>
@@ -60,7 +55,7 @@ export default function Menu({ token }) {
           </a>
         </Link>
 
-        <Link href='/'>
+        <Link href='/coc'>
           <a className='flex flex-col w-56 h-60 bg-red shadow-lg rounded-lg transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110'>
             <div className='-m-10'>
               <img src="/analytics.svg"/>

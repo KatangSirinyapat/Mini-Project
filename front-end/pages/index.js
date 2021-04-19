@@ -1,6 +1,5 @@
 import Head from 'next/head' 
 import Layout from '../components/layout' 
-import Navbar from '../components/navbar'
 
 export default function Home({ token }) {
  
@@ -9,10 +8,7 @@ export default function Home({ token }) {
     <Head>
         <title>Online Community Blog</title>
     </Head>
-     
-      <div>
-          <Navbar /> 
-      </div>    
+         
       <div className = 'flex flex-col fixed justify-center items-center h-screen w-screen'>
         <div className = 'flex flex-col -mt-28 font-bold uppercase text-5xl text-center p-8'>
           <a className = 'animate-pulse'>Online Community Blog</a>
