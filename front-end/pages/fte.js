@@ -59,10 +59,10 @@ export default function Fte({ token }) {
     (
       <div className='flex flex-wrap w-1/4 h-1/2 m-5 mt-8' key={index}>
         <div className='w-full h-full pl-2 -mt-5 break-all overflow-auto border-4 border-green-600 rounded-lg'>
-          {index+1} <br />
+          <a className='font-semibold'>User : </a> {index + 1} <br />
           {item.comment} <br />
-                Date: {item.date} <br />
-                Time: {item.time}
+          <a className='font-semibold'>Date : </a> {item.date} <br />
+          <a className='font-semibold'>Time : </a> {item.time}
         </div>
         <div className='flex justify-end w-full mt-2'>
           <button className='border-2 border-green-900 bg-green w-16 h-8 rounded-md hover:bg-babygreen focus:outline-none' onClick={() => updateStdcomment(item.id)}>Edit</button>
@@ -85,16 +85,16 @@ export default function Fte({ token }) {
         </div>
 
         <div className='flex flex-wrap justify-evenly w-4/5 h-2/5 mt-10 overflow-auto'>
-            {printStdcomments()}
+          {printStdcomments()}
         </div>
 
         <div className='flex flex-row items-end w-2/5 h-1/6 mt-10'>
           <textarea className='w-full h-full resize-none rounded-xl border-transparent border-4 border-purple-900 focus:outline-none 
-              focus:ring-4 focus:ring-purple-600 focus:border-transparent pl-2 placeholder-gray-500 placeholder-opacity-100' 
-              placeholder="Comment ..." onChange={(e) => setcomment(e.target.value)}/>
+              focus:ring-4 focus:ring-purple-600 focus:border-transparent pl-2 placeholder-gray-500 placeholder-opacity-100'
+            placeholder="Comment ..." onChange={(e) => setcomment(e.target.value)} />
           <button className='w-24 h-10 ml-4 font-bold border-4 border-purple-900 focus:outline-none rounded-md hover:bg-purple'
-              onClick={() => addStdcomment(comment)}>
-              Enter
+            onClick={() => addStdcomment(comment)}>
+            Enter
           </button>
         </div>
 

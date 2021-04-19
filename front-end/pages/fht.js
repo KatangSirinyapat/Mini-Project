@@ -59,10 +59,10 @@ export default function Fht({ token }) {
     (
       <div className='flex flex-wrap w-1/4 h-1/2 m-5 mt-8' key={index}>
         <div className='w-full h-full pl-2 -mt-5 break-all overflow-auto border-4 border-green-600 rounded-lg'>
-          {index+1} <br />
+          <a className='font-semibold'>User : </a> {index+1} <br />
           {item.comment} <br />
-                Date: {item.date} <br />
-                Time: {item.time}
+          <a className='font-semibold'>Date : </a> {item.date} <br />
+          <a className='font-semibold'>Time : </a> {item.time}
         </div>
         <div className='flex justify-end w-full mt-2'>
           <button className='border-2 border-green-900 bg-green w-16 h-8 rounded-md hover:bg-babygreen focus:outline-none' onClick={() => updateStdcomment(item.id)}>Edit</button>
