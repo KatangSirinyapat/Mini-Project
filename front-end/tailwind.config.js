@@ -32,7 +32,9 @@ module.exports = {
       'purple' : '#b19cd9',
       'red' : '#da8a67',
       'green' : '#229954',
+      'babygreen' : '#A9DFBF',
       'darkred' : '#C0392B',
+      'babyred' : '#F5B7B1',
      }),
     extend: {
       

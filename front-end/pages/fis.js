@@ -25,9 +25,7 @@ export default function Fis({ token }) {
     const showstdcomment = async () => {
         try {
             // console.log('token: ', token)
-            const fiscomments = await axios.get(`${config.URL}/fis`, {
-                headers: { Authorization: `Bearer ${token}` }
-            })
+            const fiscomments = await axios.get(URL)
             // console.log('user: ', users.data)
             setStdcomments(fiscomments.data)
         }
@@ -59,15 +57,16 @@ export default function Fis({ token }) {
     const printStdcomments = () => {
         return (stdcomments.list.map((item, index) =>
         (
-            <div className='flex flex-wrap w-1/4 h-1/2 m-5'>
-                <div className='w-full h-full pl-2 break-all overflow-auto border-4 border-green-600 rounded-lg' key={index}>
+            <div className='flex flex-wrap w-1/4 h-1/2 m-5 mt-8' key={index}>
+                <div className='w-full h-full pl-2 -mt-5 break-all overflow-auto border-4 border-green-600 rounded-lg'>
+                    {index+1} <br />
                     {item.comment} <br />
                     Date: {item.date} <br />
                     Time: {item.time}
                 </div>
                 <div className='flex justify-end w-full mt-2'>
-                    <button className='border-2 border-green-900 bg-green w-16 h-8 rounded-md' onClick={() => updateStdcomment(item.id)}>Edit</button>
-                    <button className='border-2 border-red-900 bg-darkred w-16 h-8 ml-4 rounded-md' onClick={() => deleteStdcomment(item.id)}>Delete</button>
+                    <button className='border-2 border-green-900 bg-green w-16 h-8 rounded-md hover:bg-babygreen focus:outline-none' onClick={() => updateStdcomment(item.id)}>Edit</button>
+                    <button className='border-2 border-red-900 bg-darkred w-16 h-8 ml-4 rounded-md hover:bg-babyred focus:outline-none' onClick={() => deleteStdcomment(item.id)}>Delete</button>
                 </div>
             </div>
         )
@@ -85,7 +84,7 @@ export default function Fis({ token }) {
                     <h1 className='text-3xl font-bold tracking-wider uppercase text-yellow-800'>Faculty of International Studies</h1>
                 </div>
 
-                <div className='flex flex-wrap justify-evenly w-4/5 h-2/5 mt-10 overflow-y-auto border-2 border-black'>
+                <div className='flex flex-wrap justify-evenly w-4/5 h-2/5 mt-10 overflow-auto'>
                     {printStdcomments()}
                 </div>
 

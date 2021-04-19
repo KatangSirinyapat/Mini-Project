@@ -9,10 +9,16 @@ const bcrypt = require('bcrypt')
 
 const db = require('./database.js')
 let users = db.users
-let commentsFIS = db.commentsFIS
+// let commentsFIS = db.commentsFIS
 let commentsFHT = db.commentsFHT
 let commentsFTE = db.commentsFTE
 let commentsCOC = db.commentsCOC
+let commentsFIS = {
+    list: [
+        { id: 1, name: 'sirinyapat', comment: "GOOD", date: 'Mon Apr 19 2021', time: '07:22:13 PM' },
+        { id: 2, name: 'jaturon', comment: "VERY GOOD", date: 'Tue Apr 20 2021', time: '07:22:13 PM' },
+    ]
+}
 
 
 require('./passport.js')
