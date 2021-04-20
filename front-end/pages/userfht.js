@@ -44,16 +44,6 @@ export default function Fht({ token }) {
     setStdcomments(stdcomment.data)
   }
 
-  const updateStdcomment = async (id) => {
-    let stdcomment = await axios.put(`${URL}/${id}`, { comment })
-    setStdcomments(stdcomment.data)
-  }
-
-  const deleteStdcomment = async (id) => {
-    let stdcomment = await axios.delete(`${URL}/${id}`)
-    setStdcomments(stdcomment.data)
-  }
-
   const printStdcomments = () => {
     return (stdcomments.list.map((item, index) =>
     (
@@ -63,10 +53,6 @@ export default function Fht({ token }) {
           {item.comment} <br />
           <a className='font-semibold'>Date : </a> {item.date} <br />
           <a className='font-semibold'>Time : </a> {item.time}
-        </div>
-        <div className='flex justify-end w-full mt-2'>
-          <button className='border-2 border-green-900 bg-green w-16 h-8 rounded-md hover:bg-babygreen focus:outline-none' onClick={() => updateStdcomment(item.id)}>Edit</button>
-          <button className='border-2 border-red-900 bg-darkred w-16 h-8 ml-4 rounded-md hover:bg-babyred focus:outline-none' onClick={() => deleteStdcomment(item.id)}>Delete</button>
         </div>
       </div>
     )

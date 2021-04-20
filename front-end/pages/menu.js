@@ -47,7 +47,7 @@ export default function Menu({ token }) {
               <img src="/hiring.svg"/>
             </div>
              <div className= 'text-xl font-bold text-center pt-16 tracking-wider leading-relaxed'>
-             Faculty of Technology and Environment
+                Faculty of Technology and Environment
              </div>
              <div className= 'text-3xl font-bold text-center pt-8 tracking-wider'>
                FTE
