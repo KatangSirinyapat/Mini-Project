@@ -1,5 +1,6 @@
 import Head from 'next/head' 
 import Layout from '../components/layout' 
+import Link from 'next/link'
 
 export default function Home({ token }) {
  
@@ -15,8 +16,12 @@ export default function Home({ token }) {
           <a className = 'animate-pulse mt-8'>PSU PHUKET</a>   
         </div>
           <div className = 'flex justify-around md:w-96 text-lg mt-8'>
-            <button className = 'w-36 h-14 font-semibold border-blue-600 rounded-lg bg-babyblue hover:bg-whiteblue shadow-lg'>Sign in</button>
-            <button className = 'w-36 h-14 font-semibold border-blue-600 rounded-lg bg-babyblue hover:bg-whiteblue shadow-lg'>Register</button> 
+            <Link href = '/login'>
+              <button className = 'w-36 h-14 font-semibold border-blue-600 rounded-lg bg-babyblue hover:bg-whiteblue shadow-lg'>Sign in</button>
+            </Link>
+            <Link href = '/register'>
+              <button className = 'w-36 h-14 font-semibold border-blue-600 rounded-lg bg-babyblue hover:bg-whiteblue shadow-lg'>Register</button> 
+            </Link>
           </div>  
       </div>
      
