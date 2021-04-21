@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Layout from '../components/layout'
-import { useState, useEffect } from 'react'
+import {useState} from 'react'
 import axios from 'axios'
 import React from 'react'
 import { useRouter } from 'next/router'

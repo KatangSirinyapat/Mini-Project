@@ -3,6 +3,8 @@ import Layout from '../components/layout'
 
 export default function Contectus({ token }) {
 
+    
+
     return (
         <Layout>
             <Head>
@@ -66,6 +68,7 @@ export default function Contectus({ token }) {
                             <a className='ml-4 bg-babyred rounded-lg  w-2/5 h-8 pl-3 pt-1' href="https://www.facebook.com/groups/316789945469085">COC FacebookPage</a> 
                         </div>
                     </div>
+                
 
                 </div>
 

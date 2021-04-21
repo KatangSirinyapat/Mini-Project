@@ -44,7 +44,7 @@ const Navbar = () => (
                         CONTECT US
                     </a>
                 </Link>
-                <Link href='/'>
+                <Link href='/logout'>
                     <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 mr-4 rounded text-white font-bold items-center justify-center hover:bg-blue hover:text-white'>
                         LOG OUT
                     </a>

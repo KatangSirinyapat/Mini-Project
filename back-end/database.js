@@ -9,31 +9,31 @@ let users = {
 
 let commentsFIS = {
     list: [
-        { id: 1, name: 'sirinyapat', comment: "GOOD", date: 'Mon Apr 19 2021', time: '07:22:13 PM' },
-        { id: 2, name: 'jaturon', comment: "VERY GOOD", date: 'Tue Apr 20 2021', time: '07:22:13 PM' },
+        { id: 1, name: 'sirinyapat', comment: "สนุกน้า มาเรียนกันเยอะ ๆ ", date: 'Mon Apr 19 2021', time: '07:22:13 PM' },
+        { id: 2, name: 'jaturon', comment: "พี่ ๆ รอน้องทุกคนอยู่นะน้อง ๆ 64", date: 'Tue Apr 20 2021', time: '07:22:13 PM' },
     ]
 }
 
 
 let commentsFHT = {
     list: [
-        { id: 1, name: 'sirinyapat', comment: "GOOD", date: 'Mon Apr 19 2021', time: '07:22:13 PM' },
-        { id: 2, name: 'jaturon', comment: "VERY GOOD", date: 'Tue Apr 20 2021', time: '07:22:13 PM' },
+        { id: 1, name: 'sirinyapat', comment: "FHT พี่ ๆ รอน้องอยู่ที่ห้องการบินทุกวันเลยนะ", date: 'Mon Apr 19 2021', time: '07:22:13 PM' },
+        { id: 2, name: 'jaturon', comment: "อยากปัง ก็ต้องปังแล้วมั้ย พี่ ๆ รออยู่นะที่ FHT", date: 'Tue Apr 20 2021', time: '07:22:13 PM' },
     ]
 }
 
 
 let commentsFTE = {
     list: [
-        { id: 1, name: 'sirinyapat', comment: "GOOD", date: 'Mon Apr 19 2021', time: '07:22:13 PM' },
-        { id: 2, name: 'jaturon', comment: "VERY GOOD", date: 'Tue Apr 20 2021', time: '07:22:13 PM' },
+        { id: 1, name: 'sirinyapat', comment: "น้อง ๆ คนไหนมีคำถามก็สามารถ Commet ไว้ได้เลยนะ", date: 'Mon Apr 19 2021', time: '07:22:13 PM' },
+        { id: 2, name: 'jaturon', comment: "พี่ครับ พี่ครับ ต้องเตรียมตัวยังไงบ้างครับ", date: 'Tue Apr 20 2021', time: '07:22:13 PM' },
     ]
 }
 
 let commentsCOC = {
     list: [
-        { id: 1, name: 'sirinyapat', comment: "GOOD", date: 'Mon Apr 19 2021', time: '07:22:13 PM' },
-        { id: 2, name: 'jaturon', comment: "VERY GOOD", date: 'Tue Apr 20 2021', time: '07:22:13 PM' },
+        { id: 1, name: 'sirinyapat', comment: "พี่ ๆ CoC รับน้องดุรึปล่าวครับ", date: 'Mon Apr 19 2021', time: '07:22:13 PM' },
+        { id: 2, name: 'jaturon', comment: "กลัวโดนรับน้องหนักจังเลย แง แง", date: 'Tue Apr 20 2021', time: '07:22:13 PM' },
     ]
 }
 

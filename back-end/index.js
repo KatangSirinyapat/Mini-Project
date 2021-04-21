@@ -139,12 +139,15 @@ router.route('/fis/:comment_id')
 
     .put((req, res) => {
         let date = new Date().toDateString()
+        let time = new Date().toLocaleTimeString()
         const commentId = req.params.comment_id
+       
         const id = commentsFIS.list.findIndex(item => +item.id === +commentId)
         if (id >= 0) {
             commentsFIS.list[id].name = req.body.name
             commentsFIS.list[id].comment = req.body.comment
             commentsFIS.list[id].date = date
+            commentsFIS.list[id].time = time
 
             res.send(commentsFIS)
         }
@@ -172,11 +175,13 @@ router.route('/fht')
     .get((req, res) => res.send(commentsFHT))
     .post((req, res) => {
         let date = new Date().toDateString()
+        let time = new Date().toLocaleTimeString()
         let allnewstdCom = {}
         allnewstdCom.id = (commentsFHT.list.length) ? commentsFHT.list[commentsFHT.list.length - 1].id + 1 : 1
         allnewstdCom.name = req.body.name
         allnewstdCom.comment = req.body.comment
         allnewstdCom.date = date
+        allnewstdCom.time = time
         commentsFHT = { "list": [...commentsFHT.list, allnewstdCom] }
 
         res.send(commentsFHT)
@@ -197,12 +202,14 @@ router.route('/fht/:comment_id')
 
     .put((req, res) => {
         let date = new Date().toDateString()
+        let time = new Date().toLocaleTimeString()
         const commentId = req.params.comment_id
         const id = commentsFHT.list.findIndex(item => +item.id === +commentId)
         if (id >= 0) {
             commentsFHT.list[id].name = req.body.name
             commentsFHT.list[id].comment = req.body.comment
             commentsFHT.list[id].date = date
+            commentsFHT.list[id].time = time
 
             res.send(commentsFHT)
         }
@@ -230,11 +237,13 @@ router.route('/fte')
     .get((req, res) => res.send(commentsFTE))
     .post((req, res) => {
         let date = new Date().toDateString()
+        let time = new Date().toLocaleTimeString()
         let allnewstdCom = {}
         allnewstdCom.id = (commentsFTE.list.length) ? commentsFTE.list[commentsFTE.list.length - 1].id + 1 : 1
         allnewstdCom.name = req.body.name
         allnewstdCom.comment = req.body.comment
         allnewstdCom.date = date
+        allnewstdCom.time = time
         commentsFTE = { "list": [...commentsFTE.list, allnewstdCom] }
 
         res.send(commentsFTE)
@@ -255,12 +264,14 @@ router.route('/fte/:comment_id')
 
     .put((req, res) => {
         let date = new Date().toDateString()
+        let time = new Date().toLocaleTimeString()
         const commentId = req.params.comment_id
         const id = commentsFTE.list.findIndex(item => +item.id === +commentId)
         if (id >= 0) {
             commentsFTE.list[id].name = req.body.name
             commentsFTE.list[id].comment = req.body.comment
             commentsFTE.list[id].date = date
+            commentsFTE.list[id].time = time
 
             res.send(commentsFTE)
         }
@@ -314,12 +325,14 @@ router.route('/coc/:comment_id')
 
     .put((req, res) => {
         let date = new Date().toDateString()
+        let time = new Date().toLocaleTimeString()
         const commentId = req.params.comment_id
         const id = commentsCOC.list.findIndex(item => +item.id === +commentId)
         if (id >= 0) {
             commentsCOC.list[id].name = req.body.name
             commentsCOC.list[id].comment = req.body.comment
             commentsCOC.list[id].date = date
+            commentsCOC.list[id].time = time
 
             res.send(commentsCOC)
         }

@@ -50,7 +50,7 @@ export default function Login({ token }) {
               rounded-md pl-2 focus:outline-none' type='password' placeholder='****'
               onChange={(e) => setPassword(e.target.value)} />
             <div className='flex items-center mt-6 text-sm'>
-              <input className='w-4 h-4 checked:bg-blue checked:border-transparent' type='checkbox'
+              <input className='w-4 h-4' type='checkbox'
                 onChange={(e) => setCheckbox(e.target.value)} />
               <label className='ml-2'>Remember Me</label>
             </div>

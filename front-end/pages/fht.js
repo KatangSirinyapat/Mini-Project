@@ -2,64 +2,46 @@ import Head from 'next/head'
 import Layout from '../components/layout'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
+import authFht from '../components/authfht'
+import authFis from '../components/authfis'
+import useSWR, {mutate} from 'swr'
+
+const fetcher = url => axios.get(url).then(res => res.data)
 
 const URL = `http://localhost/api/fht`
 
-export default function Fht({ token }) {
+const  Fht = ({ token }) => {
 
-  const [stdcomments, setStdcomments] = useState({
-    list: [
-      { id: 1, name: 'sirinyapat', comment: "GOOD", date: 'Mon Apr 19 2021', time: '07:22:13 PM' },
-      { id: 2, name: 'jaturon', comment: "VERY GOOD", date: 'Tue Apr 20 2021', time: '07:22:13 PM' },
-    ]
-  })
-
-  const [stdcomment, setStdcomment] = useState([])
-  const [name, setname] = useState('')
   const [comment, setcomment] = useState('')
 
-  useEffect(() => {
-    showstdcomment()
-  }, [])
-
-  const showstdcomment = async () => {
-    try {
-      // console.log('token: ', token)
-      const fiscomments = await axios.get(URL)
-      // console.log('user: ', users.data)
-      setStdcomments(fiscomments.data)
-    }
-    catch (e) {
-      console.log(e)
-    }
-  }
-
-  // const getStdcomment = async (id) => {
-  //     let stdcomment = await axios.get(`${URL}/${id}`)
-  //     setStdcomment(stdcomment.data)
-  // }
+  const { data, error } = useSWR(URL, fetcher, { revalidateOnFocus: false })
+  if (error) return <div>failed to load</div>
+  if (!data) return <div>loading...</div>
+  console.log('Home: ', data)
 
   const addStdcomment = async (comment) => {
     let stdcomment = await axios.post(URL, { comment })
-    setStdcomments(stdcomment.data)
+    mutate(URL)
   }
 
   const updateStdcomment = async (id) => {
     let stdcomment = await axios.put(`${URL}/${id}`, { comment })
-    setStdcomments(stdcomment.data)
+    mutate(URL)
   }
 
   const deleteStdcomment = async (id) => {
     let stdcomment = await axios.delete(`${URL}/${id}`)
-    setStdcomments(stdcomment.data)
+    mutate(URL)
   }
 
-  const printStdcomments = () => {
-    return (stdcomments.list.map((item, index) =>
+  const printStdcomments = (stdcomments) => {
+    return (stdcomments.map((item, index) =>
     (
       <div key={index} className='flex flex-wrap w-1/4 h-1/2 m-5 mt-8' >
         <div className='w-full h-full pl-2 -mt-5 break-all overflow-auto border-4 border-green-600 rounded-lg'>
-          <a className='font-semibold'>User : </a> {index+1} <br />
+          <a className='font-semibold'>Blog : </a> {index+1} <br />
+          <a className='font-semibold'>User : </a> {item.id} <br />
+
           {item.comment} <br />
           <a className='font-semibold'>Date : </a> {item.date} <br />
           <a className='font-semibold'>Time : </a> {item.time}
@@ -85,7 +67,7 @@ export default function Fht({ token }) {
         </div>
 
         <div className='flex flex-wrap justify-evenly w-4/5 h-2/5 mt-10 overflow-auto'>
-            {printStdcomments()}
+            {printStdcomments(data.list)}
         </div>
 
         <div className='flex flex-row items-end w-2/5 h-1/6 mt-10'>
@@ -103,6 +85,7 @@ export default function Fht({ token }) {
   )
 }
 
+export default authFht(Fht)
 export function getServerSideProps({ req, res }) {
   // console.log("token from cookie: ",cookie.get("token"))
   // console.log('req: ', req.headers)
