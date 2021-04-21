@@ -92,9 +92,9 @@ export default function Fis({ token }) {
                     <textarea className='w-full h-full resize-none rounded-xl bg-sunglow border-transparent border-4 border-yellow-800 focus:outline-none 
                         focus:ring-4 focus:ring-yellow-600 focus:border-transparent pl-2 placeholder-gray-500 placeholder-opacity-100'
                         placeholder="Comment ..." onChange={(e) => setcomment(e.target.value)} />
-                    <button className='w-24 h-10 ml-4 font-bold border-4 border-yellow-800 focus:outline-none rounded-md hover:bg-sunglow'
+                    <button className='w-28 h-10 ml-4 font-bold border-4 border-yellow-800 focus:outline-none rounded-md hover:bg-sunglow'
                         onClick={() => addStdcomment(comment)}>
-                        Enter
+                        Comment
                     </button>
                 </div>
             </div>

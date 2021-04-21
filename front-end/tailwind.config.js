@@ -36,7 +36,7 @@ module.exports = {
       'darkred' : '#C0392B',
       'babyred' : '#F5B7B1',
       'bluesea' : '#8DC6BF',
-      'egg' : '#FCBC66',
+      'egg' : '#8dc6bf80',
      }),
     extend: {
       

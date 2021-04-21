@@ -72,7 +72,6 @@ export default function Coc({ token }) {
     ))
   }
 
-
   return (
     <Layout>
       <Head>
@@ -92,9 +91,9 @@ export default function Coc({ token }) {
           <textarea className='w-full h-full resize-none rounded-xl border-transparent border-4 border-red-900 focus:outline-none 
             focus:ring-4 focus:ring-red-600 focus:border-transparent pl-2 placeholder-gray-500 placeholder-opacity-100' 
             placeholder="Comment ..." onChange={(e) => setcomment(e.target.value)}/>
-          <button className='w-24 h-10 ml-4 font-bold border-4 border-red-900 focus:outline-none rounded-md hover:bg-red'
+          <button className='w-28 h-10 ml-4 font-bold border-4 border-red-900 focus:outline-none rounded-md hover:bg-red'
             onClick={() => addStdcomment(comment)}>
-            Enter
+            Comment
           </button>
         </div>
       </div>
