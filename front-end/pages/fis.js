@@ -2,10 +2,11 @@ import Head from 'next/head'
 import Layout from '../components/layout'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
+import authFis from '../components/authfis'
 
 const URL = `http://localhost/api/fis`
 
-export default function Fis({ token }) {
+const Fis = ({ token }) => {
 
     const [stdcomments, setStdcomments] = useState({
         list: [
@@ -102,6 +103,7 @@ export default function Fis({ token }) {
     )
 }
 
+export default authFis(Fis)
 export function getServerSideProps({ req, res }) {
     // console.log("token from cookie: ",cookie.get("token"))
     // console.log('req: ', req.headers)

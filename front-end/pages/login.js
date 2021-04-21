@@ -1,8 +1,33 @@
 import Head from 'next/head'
 import Layout from '../components/layout'
 import Link from 'next/link'
+import { useState } from 'react'
+import axios from 'axios'
 
-export default function Register({ token }) {
+const URL = `http://localhost/api/login`
+
+export default function Login({ token }) {
+  const [username, setUsername] = useState('')
+  const [password, setPassword] = useState('')
+  const [status, setStatus] = useState('')
+  const [checktoken, setCheckbox] = useState('')
+
+  const login = async (req, res) => {
+    try {
+      let result = await axios.post(URL,
+        { username, password, checktoken },
+        { withCredentials: true })
+      console.log('result: ', result)
+      console.log('result.data:  ', result.data)
+      console.log('token:  ', token)
+      setStatus(result.status + ': ' + result.data.user.username)
+    }
+    catch (e) {
+      console.log('error: ', JSON.stringify(e.response))
+      setStatus(JSON.stringify(e.response).substring(0, 80) + "...")
+    }
+  }
+
 
   return (
     <Layout>
@@ -16,20 +41,28 @@ export default function Register({ token }) {
         </div>
         <div className='flex flex-col justify-start items-center w-1/4 bg-egg rounded-b-xl shadow-xl'>
           <div className='flex flex-col justify-center items-start w-4/5 mt-8'>
-            <label className='font-semibold'>E-mail</label>
-            <input className='w-full h-8 mt-2 border-2 border-gray-500 ring ring-gray-400  rounded-md pl-2 focus:outline-none' placeholder='Foo@gmail.com' />
+            <label className='font-semibold'>Username</label>
+            <input className='w-full h-8 mt-2 border-2 border-gray-500 ring ring-gray-400  
+              rounded-md pl-2 focus:outline-none' placeholder='Foo'
+              onChange={(e) => setUsername(e.target.value)} />
             <label className='mt-4 font-semibold'>Password</label>
-            <input className='w-full h-8 mt-2 border-2 border-gray-500 ring ring-gray-400 rounded-md pl-2 focus:outline-none' type='password' placeholder='****' />
+            <input className='w-full h-8 mt-2 border-2 border-gray-500 ring ring-gray-400 
+              rounded-md pl-2 focus:outline-none' type='password' placeholder='****'
+              onChange={(e) => setPassword(e.target.value)} />
             <div className='flex items-center mt-6 text-sm'>
-              <input className='w-4 h-4 checked:bg-blue checked:border-transparent' type='checkbox' />
+              <input className='w-4 h-4 checked:bg-blue checked:border-transparent' type='checkbox'
+                onChange={(e) => setCheckbox(e.target.value)} />
               <label className='ml-2'>Remember Me</label>
             </div>
           </div>
           <div className='flex flex-col justify-center items-center w-4/5 mt-5 pb-6'>
-            <button className='w-full h-8 font-semibold border-2 border-blue-600 ring rounded-md hover:bg-babyblue focus:outline-none'>Log in</button>
+            <button className='w-full h-8 font-semibold border-2 border-blue-600 ring rounded-md 
+              hover:bg-babyblue focus:outline-none' onClick={login}>
+              Log in
+            </button>
             <div className='flex flex-row mt-6'>
               Don't have an account?
-                      <Link href='/register'>
+              <Link href='/register'>
                 <a className='ml-2 font-semibold'>Register</a>
               </Link>
             </div>
