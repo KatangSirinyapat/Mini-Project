@@ -28,10 +28,10 @@ export default function logout({ token }) {
             <div className='flex flex-col fixed justify-center items-center h-screen w-screen'>
                 <div className='text-center divide-y-2 divide-black -mt-28'>
                     <div className='pb-4'>
-                        <h1 className='text-4xl font-bold animate-pulse'>Logout</h1>
+                        <h1 className='text-6xl font-bold animate-pulse uppercase'>Log out</h1>
                     </div>
                     <div className='pt-4'>
-                        <h1 className='text-xl font-bold animate-pulse'> {status} </h1>
+                        <h1 className='text-3xl font-bold animate-pulse'> {status} </h1>
                     </div>
                 </div>
 

@@ -26,9 +26,8 @@ export default function Menu({ token }) {
           </a>
         </Link>
      
-       
         <Link href='/fht'>
-          <a className='flex flex-col w-56 h-60 bg-palepink shadow-lg rounded-lg text-gray-900 transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110'>
+          <a className='flex flex-col w-56 h-60 bg-palepink shadow-lg rounded-lg transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110'>
             <div className='-m-10'>
               <img src="/aeroplane.svg"/>
             </div>

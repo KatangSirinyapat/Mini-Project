@@ -4,6 +4,8 @@ import Link from 'next/link'
 import { useState } from 'react'
 import axios from 'axios'
 
+
+
 const URL = `http://localhost/api/login`
 
 export default function Login({ token }) {
@@ -20,12 +22,21 @@ export default function Login({ token }) {
       console.log('result: ', result)
       console.log('result.data:  ', result.data)
       console.log('token:  ', token)
-      setStatus(result.status + ': ' + result.data.user.username)
+      // setStatus(result.status + ': ' + result.data.user.username)
+      setStatus('Welcome to Website')
+      alert('Welcome to Website')
     }
     catch (e) {
       console.log('error: ', JSON.stringify(e.response))
-      setStatus(JSON.stringify(e.response).substring(0, 80) + "...")
+      // setStatus(JSON.stringify(e.response).substring(0, 80) + "...")
+      setStatus('User or Password invalid')
+      alert('User or Password invalid')
     }
+  }
+
+  const copyText = () => {
+    navigator.clipboard.writeText(token)
+    console.log("test::", token);
   }
 
 
@@ -35,7 +46,7 @@ export default function Login({ token }) {
         <title>Online Community Blog</title>
       </Head>
       <div className='flex flex-col fixed justify-start items-center h-screen w-screen'>
-        <div className='flex flex-col justify-center items-center w-1/4 h-24 mt-28 rounded-t-xl bg-bluesea divide-y-2 divide-black '>
+        <div className='flex flex-col justify-center items-center w-1/4 h-24 mt-24 rounded-t-xl bg-bluesea divide-y-2 divide-black '>
           <span className='text-xl  font-bold uppercase tracking-wider pb-1 text-center'>Log in</span>
           <span className='text-lg font-bold uppercase tracking-wide text-center pt-2'>From Admin</span>
         </div>
@@ -67,9 +78,12 @@ export default function Login({ token }) {
               </Link>
             </div>
           </div>
-
         </div>
+        {/* <button onClick={copyText}> Copy token </button> */}
 
+        <button onClick={copyText} className='flex justify-end items-center w-full mt-8 focus:outline-none'>
+          <img className='mr-16 transition duration-700 transform hover:-translate-y-1 hover:scale-110' src="/top-secret.svg" />
+        </button>
 
       </div>
     </Layout>

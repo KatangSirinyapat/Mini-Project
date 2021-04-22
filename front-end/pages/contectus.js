@@ -19,11 +19,11 @@ export default function Contectus({ token }) {
                         </div>
                         <div className='flex flex-row items-center pl-10 pt-10 text-lg font-medium tracking-wider'>
                             <img className='-mt-3' src="/web-browser.svg" />
-                            <a className='ml-4 -mt-3 bg-palepink rounded-lg w-2/5 h-8 pl-3 pt-1' href="https://www.fis.psu.ac.th/en/">FIS Website</a> 
+                            <a className='ml-4 -mt-3 bg-palepink rounded-lg w-2/5 h-8 pl-3 pt-1 hover:underline' href="https://www.fis.psu.ac.th/en/">FIS Website</a> 
                         </div>
                         <div className='flex flex-row items-center pl-10 pt-10 text-lg font-medium tracking-wider'>
                             <img className='-mt-3' src="/speech-bubble.svg" />
-                            <a className='ml-4 bg-palepink rounded-lg w-2/5 h-8 pl-3 pt-1' href="https://www.facebook.com/fis.psu.ac.th">FIS FacebookPage</a> 
+                            <a className='ml-4 bg-palepink rounded-lg w-2/5 h-8 pl-3 pt-1 hover:underline' href="https://www.facebook.com/fis.psu.ac.th">FIS FacebookPage</a> 
                         </div>
                     </div>
 
@@ -33,11 +33,11 @@ export default function Contectus({ token }) {
                         </div>
                         <div className='flex flex-row items-center  pl-10 pt-10 text-lg font-medium tracking-wider'>
                             <img className='-mt-3' src="/web-browser.svg" />
-                            <a className='ml-4 -mt-3 bg-whiteblue rounded-lg  w-2/5 h-8 pl-3 pt-1' href="https://te.psu.ac.th/">FTE Website</a> 
+                            <a className='ml-4 -mt-3 bg-whiteblue rounded-lg  w-2/5 h-8 pl-3 pt-1 hover:underline' href="https://te.psu.ac.th/">FTE Website</a> 
                         </div>
                         <div className='flex flex-row items-center  pl-10 pt-10 text-lg font-medium tracking-wider'>
                             <img className='-mt-3' src="/speech-bubble.svg" />
-                            <a className='ml-4 bg-whiteblue rounded-lg  w-2/5 h-8 pl-3 pt-1' href="https://www.facebook.com/SAMO.FTE.PSUPK">FTE FacebookPage</a> 
+                            <a className='ml-4 bg-whiteblue rounded-lg  w-2/5 h-8 pl-3 pt-1 hover:underline' href="https://www.facebook.com/SAMO.FTE.PSUPK">FTE FacebookPage</a> 
                         </div>
                     </div>
 
@@ -47,11 +47,11 @@ export default function Contectus({ token }) {
                         </div>
                         <div className='flex flex-row items-center  pl-10 pt-10 text-lg font-medium tracking-wider'>
                             <img className='-mt-3' src="/web-browser.svg" />
-                            <a className='ml-4 -mt-3 bg-sunglow rounded-lg  w-2/5 h-8 pl-3 pt-1' href="https://fht.psu.ac.th/?lang=th">FHT Website</a> 
+                            <a className='ml-4 -mt-3 bg-sunglow rounded-lg  w-2/5 h-8 pl-3 pt-1 hover:underline' href="https://fht.psu.ac.th/?lang=th">FHT Website</a> 
                         </div>
                         <div className='flex flex-row items-center  pl-10 pt-10 text-lg font-medium tracking-wider'>
                             <img className='-mt-3' src="/speech-bubble.svg" />
-                            <a className='ml-4 bg-sunglow rounded-lg  w-2/5 h-8 pl-3 pt-1' href="https://www.facebook.com/fht.psu.hkt">FHT FacebookPage</a> 
+                            <a className='ml-4 bg-sunglow rounded-lg  w-2/5 h-8 pl-3 pt-1 hover:underline' href="https://www.facebook.com/fht.psu.hkt">FHT FacebookPage</a> 
                         </div>
                     </div>
 
@@ -61,11 +61,11 @@ export default function Contectus({ token }) {
                         </div>
                         <div className='flex flex-row items-center  pl-10 pt-10 text-lg font-medium tracking-wider'>
                             <img className='-mt-3'src="/web-browser.svg" />
-                            <a className='ml-4 -mt-3 bg-babyred rounded-lg  w-2/5 h-8 pl-3 pt-1' href="https://computing.psu.ac.th/th/">COC Website</a> 
+                            <a className='ml-4 -mt-3 bg-babyred rounded-lg  w-2/5 h-8 pl-3 pt-1 hover:underline' href="https://computing.psu.ac.th/th/">COC Website</a> 
                         </div>
                         <div className='flex flex-row items-center  pl-10 pt-10 text-lg font-medium tracking-wider'>
                             <img className='-mt-3' src="/speech-bubble.svg" />
-                            <a className='ml-4 bg-babyred rounded-lg  w-2/5 h-8 pl-3 pt-1' href="https://www.facebook.com/groups/316789945469085">COC FacebookPage</a> 
+                            <a className='ml-4 bg-babyred rounded-lg  w-2/5 h-8 pl-3 pt-1 hover:underline' href="https://www.facebook.com/groups/316789945469085">COC FacebookPage</a> 
                         </div>
                     </div>
                 
