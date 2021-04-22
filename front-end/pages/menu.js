@@ -10,7 +10,7 @@ export default function Menu({ token }) {
         <title>Online Community Blog</title>
       </Head>
       <div className = 'flex justify-center mt-14 text-4xl font-bold uppercase tracking-wider'>Online Community Blog</div>
-      <div className = 'flex justify-center mt-4 text-md font-medium uppercase tracking-wider italic animate-pulse'>" Please select the faculty you want "</div>
+      <div className = 'flex justify-center mt-4 text-md font-medium uppercase tracking-wider italic animate-pulse'>" Please select the faculty "</div>
 
       <div className='md:flex flex-row fixed justify-evenly items-start mt-36 h-screen w-screen'>  
       <Link href='/fis'>
