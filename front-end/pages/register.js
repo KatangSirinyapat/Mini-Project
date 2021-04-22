@@ -23,7 +23,7 @@ export default function Register({ token }) {
             console.log('result: ', result)
             console.log('result.data:  ', result.data)
             console.log('token:  ', token)
-            setStatus(result.data.message)
+            // setStatus(result.data.message)
         }
         catch (e) {
             console.log(e)
@@ -42,7 +42,7 @@ export default function Register({ token }) {
         else
         {
             console.log("Password isn't Same ");
-            setStatus("Enter Password agains")
+            setStatus('Enter Password agains')
 
         }
     }
