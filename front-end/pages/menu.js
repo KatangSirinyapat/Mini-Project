@@ -9,12 +9,15 @@ export default function Menu({ token }) {
       <Head>
         <title>Online Community Blog</title>
       </Head>
-      <div className = 'flex justify-center mt-14 text-4xl font-bold uppercase tracking-wider'>Online Community Blog</div>
-      <div className = 'flex justify-center mt-4 text-md font-medium uppercase tracking-wider italic animate-pulse'>" Please select the faculty "</div>
+      <div className = 'flex justify-center mt-14 text-4xl font-bold uppercase tracking-wider'>
+        Online Community Blog</div>
+      <div className = 'flex justify-center mt-4 text-md font-medium uppercase tracking-wider italic animate-pulse'>
+        " Please select the faculty "</div>
 
       <div className='md:flex flex-row fixed justify-evenly items-start mt-36 h-screen w-screen'>  
       <Link href='/fis'>
-          <a className='flex flex-col w-56 h-60 bg-sunglow shadow-lg rounded-lg transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110'>
+          <a className='flex flex-col w-56 h-60 bg-sunglow shadow-lg rounded-lg transition duration-700 
+            ease-in-out transform hover:-translate-y-1 hover:scale-110'>
             <div className='-m-10'>
               <img src="/pin.svg"/>
             </div>
@@ -28,7 +31,8 @@ export default function Menu({ token }) {
         </Link>
      
         <Link href='/fht'>
-          <a className='flex flex-col w-56 h-60 bg-palepink shadow-lg rounded-lg transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110'>
+          <a className='flex flex-col w-56 h-60 bg-palepink shadow-lg rounded-lg transition duration-700 
+            ease-in-out transform hover:-translate-y-1 hover:scale-110'>
             <div className='-m-10'>
               <img src="/aeroplane.svg"/>
             </div>
@@ -42,7 +46,8 @@ export default function Menu({ token }) {
         </Link>
 
         <Link href='/fte'>
-          <a className='flex flex-col w-56 h-60 bg-purple shadow-lg rounded-lg transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110'>
+          <a className='flex flex-col w-56 h-60 bg-purple shadow-lg rounded-lg transition duration-700 
+          ease-in-out transform hover:-translate-y-1 hover:scale-110'>
             <div className='-m-10'>
               <img src="/hiring.svg"/>
             </div>
@@ -56,7 +61,8 @@ export default function Menu({ token }) {
         </Link>
 
         <Link href='/coc'>
-          <a className='flex flex-col w-56 h-60 bg-red shadow-lg rounded-lg transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110'>
+          <a className='flex flex-col w-56 h-60 bg-red shadow-lg rounded-lg transition duration-700 
+          ease-in-out transform hover:-translate-y-1 hover:scale-110'>
             <div className='-m-10'>
               <img src="/analytics.svg"/>
             </div>

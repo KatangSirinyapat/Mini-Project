@@ -74,7 +74,7 @@ const Fis = ({ token }) => {
 
                 <div className='flex flex-row items-end w-2/5 h-1/6 mt-10'>
                     <textarea className='w-full h-full resize-none rounded-xl bg-sunglow border-transparent border-4 border-yellow-900 focus:outline-none 
-                        focus:ring-4 focus:ring-purple-600 focus:border-transparent pl-2 placeholder-gray-500 placeholder-opacity-100'
+                        focus:ring-4 focus:ring-yellow-600 focus:border-transparent pl-2 placeholder-gray-500 placeholder-opacity-100'
                         placeholder="Comment ..." onChange={(e) => setcomment(e.target.value)} />
                     <button className='w-28 h-10 ml-4 font-bold border-4 border-yellow-800 focus:outline-none rounded-md hover:bg-sunglow'
                         onClick={() => addStdcomment(comment)}>
